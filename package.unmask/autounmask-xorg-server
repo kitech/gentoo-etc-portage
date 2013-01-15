@@ -1,0 +1,10 @@
+
+# ---
+# BEGIN: x11-base/xorg-server-1.10.0
+# ---
+=x11-proto/xextproto-9999::x11
+=x11-base/xorg-server-1.10.99.901
+# ---
+# END: x11-base/xorg-server-1.10.0
+# ---
+

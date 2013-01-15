@@ -1,0 +1,27 @@
+
+# ---
+# BEGIN: kde-misc/knetworkmanager-9999
+# ---
+# =kde-misc/knetworkmanager-9999
+# move kde-misc/knetworkmanager kde-misc/networkmanagement
+=kde-misc/networkmanagement-0.8.95
+=kde-misc/libmm-qt-9999
+=kde-misc/libnm-qt-9999
+=kde-misc/networkmanagement-9999
+>=kde-misc/networkmanagement-4.4.0_p20100225
+=kde-misc/knetworkmanager-9999-r2
+=kde-base/ksecrets-4.7.95
+=kde-base/ksecrets-4.7.97
+>=dev-libs/soprano-2.7.56
+# ---
+# END: kde-misc/knetworkmanager-9999
+# ---
+
+
+# ---
+# BEGIN: kde-misc/knetworkmanager-9999-r2
+# ---
+# ---
+# END: kde-misc/knetworkmanager-9999-r2
+# ---
+

@@ -1,0 +1,27 @@
+
+# ---
+# BEGIN: kde-misc/knetworkmanager-9999
+# ---
+
+=kde-misc/libmm-qt-9999 **
+=kde-misc/libnm-qt-9999 **
+=kde-misc/networkmanagement-9999 **
+
+=media-libs/prison-9999 **
+
+# =kde-misc/knetworkmanager-9999 ~amd64
+# move kde-misc/knetworkmanager kde-misc/networkmanagement
+# =kde-misc/knetworkmanager-9999-r2 **
+# =kde-misc/networkmanagement-9999 **
+# ---
+# END: kde-misc/knetworkmanager-9999
+# ---
+
+
+# ---
+# BEGIN: kde-misc/knetworkmanager-9999-r2
+# ---
+# ---
+# END: kde-misc/knetworkmanager-9999-r2
+# ---
+

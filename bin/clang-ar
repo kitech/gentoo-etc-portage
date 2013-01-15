@@ -1,0 +1,7 @@
+#!/bin/sh
+
+##### to /usr/local/bin/clang-ar
+firstarg=${1}
+shift
+
+exec /usr/bin/ar "${firstarg}" --plugin /usr/lib/llvm/LLVMgold.so "${@}"

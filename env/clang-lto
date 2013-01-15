@@ -1,0 +1,12 @@
+CC='clang'
+CXX='clang++'
+#LD="ld.gold"
+CFLAGS="${CFLAGS} -O2 "
+CXXFLAGS="${CXXFLAGS} -O2 -stdlib=libc++"
+LDFLAGS="${LDFLAGS} -v -O2 -flto -stdlib=libc++"
+#LDFLAGS="${LDFLAGS} -O2 -Wl,-plugin,/usr/lib/llvm/LLVMgold.so"  # coredump
+AR='/usr/local/bin/clang-ar'
+AR='/etc/portage/bin/clang-ar'
+RANLIB=':'
+NM='nm --plugin /usr/lib64/llvm/LLVMgold.so'
+
