@@ -3,6 +3,7 @@
 =app-misc/fprint_demo-9999
 =dev-libs/libusb-1.0.9999
 
+x11-wm/enlightenment:0
 
 # >=x11-base/xorg-server-1.8.0
 # >x11-apps/xinit-1.2.1
@@ -31,7 +32,10 @@ app-text/poppler-qt4
 app-text/poppler-glib
 
 =sys-apps/net-tools-1.60_p201111202031570500
-
+>dev-libs/icu-49.1.2
+=app-misc/pax-utils-0.6
+#=media-libs/libpng-1.5.14
+=x11-base/xorg-server-1.13.2.901
 
 #=kde-base/oxygen-icons-9999
 #=kde-base/kde-env-9999

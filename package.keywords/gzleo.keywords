@@ -4,9 +4,6 @@
 # END: sys-fs/btrfs-progs-9999
 # ---
 
-=sys-boot/grub-1.99-r2 **
-=sys-boot/grub-2.00_beta1 **
-=sys-boot/grub-2.00_beta2 **
 =sys-boot/grub-2.00 **
 =sys-apps/portage-2.2.0* **
 =sys-apps/systemd-36 **
@@ -16,23 +13,10 @@
 =kde-misc/networkmanagement-9999-r2 **
 # =net-libs/libbluedevil-9999 **
 # =net-wireless/bluedevil-9999 **
->=sys-auth/polkit-qt-0.98 **
->=sys-auth/polkit-kde-agent-0.98 **
->=kde-misc/polkit-kde-kcmodules-0.98 **
-
-# =app-office/kpresenter-2.2.91 **
-# =app-office/kspread-2.2.91 **
-# =app-office/kword-2.2.91 **
-# =app-office/kplato-2.2.91 **
-# =app-office/krita-2.2.91 **
-# =app-office/karbon-2.2.91 **
-# =app-office/kchart-2.2.91 **
-# =app-office/koffice-meta-2.2.91 **
-# =app-office/koffice-data-2.2.91 **
-# =app-office/koffice-libs-2.2.91 **
-# =app-office/koffice-l10n-2.2.91 **
-# =app-office/kspread-2.2.91 **
-# =app-office/kexi-2.2.91 **
+#>=sys-auth/polkit-qt-0.98 **
+#>=sys-auth/polkit-kde-agent-0.98 **
+#>=kde-misc/polkit-kde-kcmodules-0.98 **
+=dev-libs/extra-cmake-modules-9999 **
 
 =media-libs/libjpeg-turbo-1.0.1 **
 =media-libs/libjpeg-turbo-1.0.90.1 **

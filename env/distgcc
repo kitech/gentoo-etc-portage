@@ -1,0 +1,5 @@
+CC=distcc gcc      #-ccc-host-triple x86_64-apple-darwin
+CXX=distcc g++       #-ccc-host-triple x86_64-apple-darwin
+CFLAGS="-O2 -pipe " 
+CXXFLAGS="${CFLAGS} "
+

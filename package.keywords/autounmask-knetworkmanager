@@ -3,11 +3,16 @@
 # BEGIN: kde-misc/knetworkmanager-9999
 # ---
 
-=kde-misc/libmm-qt-9999 **
-=kde-misc/libnm-qt-9999 **
-=kde-misc/networkmanagement-9999 **
+#=kde-misc/libmm-qt-9999 **
+#=kde-misc/libnm-qt-9999 **
+#=net-libs/libmm-qt-9999 **
+#=net-libs/libnm-qt-9999 **
+# =kde-misc/networkmanagement-9999 **
+#=net-misc/modemmanager-9999 **
 
-=media-libs/prison-9999 **
+#=dev-libs/extra-cmake-modules-9999 **
+
+#=media-libs/prison-9999 **
 
 # =kde-misc/knetworkmanager-9999 ~amd64
 # move kde-misc/knetworkmanager kde-misc/networkmanagement

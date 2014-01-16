@@ -8,8 +8,8 @@
 
 
 # >=dev-libs/soprano-2.5.63 **
->=sys-auth/polkit-kde-agent-0.99 **
-=kde-misc/polkit-kde-kcmodules-9999 **
+#>=sys-auth/polkit-kde-agent-0.99 **
+#=kde-misc/polkit-kde-kcmodules-9999 **
 
 # ---
 # END: x11-libs/qt-webkit-4.7.0_beta2

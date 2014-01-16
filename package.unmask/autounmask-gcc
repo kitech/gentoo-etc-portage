@@ -3,42 +3,30 @@
 # BEGIN: sys-devel/gcc-4.5.0_alpha20091210
 # ---
 # ---
-#=sys-devel/gcc-4.5.0
-#=sys-devel/gcc-4.6.0
-#=sys-devel/gcc-4.5.1
+=sys-devel/gcc-4.8.0
+=sys-devel/gcc-4.8.1
 # END: sys-devel/gcc-4.5.0_alpha20091210
 # ---
 
-# =sys-libs/glibc-2.17.0
+=sys-libs/glibc-2.18.0
 
-=sys-devel/llvm-3.2
-=sys-devel/clang-3.2
+=sys-devel/clang-3.4-r100
+=sys-devel/llvm-3.4
 
-=dev-libs/boost-1.47.0
-=dev-util/boost-build-1.47.0
+#=dev-libs/boost-1.51.0
+#=dev-libs/boost-1.52.0
+=dev-libs/boost-1.54.0
+#=dev-util/boost-build-1.51.0
+#=dev-util/boost-build-1.52.0
+=dev-util/boost-build-1.54.0
+=dev-util/boost-build-1.55.0
+=dev-libs/boost-1.54.0-r1
+=dev-libs/boost-1.55.0-r1
 
-=dev-libs/boost-1.48.0
-=dev-libs/boost-1.49.0
-=dev-libs/boost-1.50.0-r2
-=dev-libs/boost-1.51.0
-=dev-libs/boost-1.52.0
-=dev-util/boost-build-1.48.0
-=dev-util/boost-build-1.49.0
-=dev-util/boost-build-1.50.0-r3
-=dev-util/boost-build-1.51.0
-=dev-util/boost-build-1.52.0
 
 # ---
 # BEGIN: sys-devel/gcc-4.6.0
 # ---
-=sys-devel/gcc-4.6.0::gentoo
-=sys-devel/gcc-4.6.1::gentoo
-=sys-devel/gcc-4.6.2::gentoo
-=sys-devel/gcc-4.6.3
-=sys-devel/gcc-4.7.0
-=sys-devel/gcc-4.7.1
-=sys-devel/gcc-4.6.1-r1::gentoo
-=sys-devel/gcc-4.7.2
 # ---
 # END: sys-devel/gcc-4.6.0
 # ---
@@ -47,6 +35,7 @@
 # ---
 # BEGIN: sys-devel/gcc-4.6.1-r1
 # ---
+=sys-libs/libcxxabi-9999
 # ---
 # END: sys-devel/gcc-4.6.1-r1
 # ---

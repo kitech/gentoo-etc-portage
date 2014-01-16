@@ -1,6 +1,6 @@
 app-laptop/laptop-mode-tools -apm
 app-text/acroread minimal -nsplugin
-app-i18n/fcitx -dbus -gtk gtk3 -pango
+app-i18n/fcitx dbus -gtk gtk3 -pango
 app-benchmarks/bootchart acct java
 app-editors/emacs       X gtk
 app-emacs/slime  xref
@@ -11,6 +11,7 @@ sys-libs/zlib minizip static-libs
 sys-apps/portage python3
 sys-apps/paludis portage
 sys-apps/pciutils  -zlib
+# sys-auth/polkit  -introspection
 www-client/firefox -linguas_en -linguas_en_GB -custom-optimization
 www-plugins/adobe-flash 32bit 64bit -bindist 
 dev-libs/elfutils  static-libs
@@ -40,41 +41,68 @@ net-dns/libidn static-libs
 # app-emulation/virtualbox -opengl
 app-emulation/wine custom-cflags win64 perl udisks
 app-emulation/bochs  debugger svga vnc wxwindows
-app-emulation/libvirt python parted qemu udev uml virtualbox
+#app-emulation/libvirt python parted qemu udev uml virtualbox
 app-admin/conky hddtemp
 dev-libs/openssl static-libs gmp
 dev-libs/gmp static-libs
 dev-libs/libxml2 -icu python
 dev-libs/libpcre pcre16
+dev-libs/nss utils
 dev-libs/protobuf python
 dev-lang/python  sqlite -tk
 dev-lang/icc ipp
 dev-lang/erlang hipe java wxwidgets
 
-x11-libs/cairo -qt4
-x11-libs/qt-assistant   qt3support -stable-branch
-x11-libs/qt-test  -stable-branch
-x11-libs/qt-qt3support  stable-branch
-x11-libs/qt-svg stable-branch
-x11-libs/qt-opengl -egl qt3support -stable-branch
-x11-libs/qt-sql  mysql postgres qt3support -stable-branch
-x11-libs/qt-webkit -stable-branch
-x11-libs/qt-xmlpatterns  -stable-branch
-x11-libs/qt-core  icu private-headers qt3support -stable-branch
-x11-libs/qt-multimedia  -stable-branch
-x11-libs/qt-dbus   -stable-branch
-x11-libs/qt-gui   dbusmenu -egl gtkstyle private-headers qt3support raster -nis -stable-branch
-x11-libs/qt-script private-headers -stable-branch
-x11-libs/qt-declarative private-headers qt3support webkit -stable-branch
+x11-libs/libxcb xkb
+x11-libs/cairo -opengl -qt4
+#x11-libs/qt-assistant   qt3support -stable-branch
+#x11-libs/qt-test  -stable-branch
+#x11-libs/qt-qt3support  stable-branch
+#x11-libs/qt-svg stable-branch
+#x11-libs/qt-opengl qt3support -stable-branch
+#x11-libs/qt-sql  mysql postgres qt3support -stable-branch
+#x11-libs/qt-webkit -stable-branch
+#x11-libs/qt-xmlpatterns  -stable-branch
+#x11-libs/qt-core  icu private-headers qt3support -stable-branch
+#x11-libs/qt-multimedia  -stable-branch
+#x11-libs/qt-dbus   -stable-branch
+#x11-libs/qt-gui   dbusmenu  gtkstyle private-headers qt3support raster -nis -stable-branch
+#x11-libs/qt-script private-headers -stable-branch
+#x11-libs/qt-declarative private-headers qt3support webkit -stable-branch
 #x11-libs/qt-phonon debug
-dev-util/qt-creator android cmake
+dev-qt/qt-creator android cmake
 
-dev-util/qt-creator fakevim qml rss qtscript
+dev-qt/qtcore:4 icu private-headers qt3support -stable-branch
+dev-qt/qtgui:4 dbusmenu  gtkstyle private-headers qt3support raster -nis -stable-branch
+dev-qt/qtsql:4 mysql postgres qt3support -stable-branch
+dev-qt/qtdeclarative:4 webkit
+
+dev-qt/qtcore:5 icu -c++11
+dev-qt/qtgui:5    -c++11 -kms
+dev-qt/qtsql:5    -c++11
+dev-qt/qtdeclarative:5  -c++11
+dev-qt/qtwebkit:5  -c++11 libxml2 multimedia qml webp widgets xslt
+dev-qt/qtscript:5 -c++11
+dev-qt/qtdbus:5 -c++11
+dev-qt/qtopengl:5 -c++11
+dev-qt/qtxml:5 -c++11
+dev-qt/qtxmlpatterns -c++11
+dev-qt/qtmultimedia -c++11 qml
+dev-qt/qtassistant:5 -c++11
+dev-qt/qthelp:5 -c++11
+dev-qt/qtsvg:5 -c++11
+dev-qt/qt3support:5 -c++11
+dev-qt/qtwidgets:5 -c++11
+dev-qt/qttest -c++11
+
+# dev-util/qt-creator fakevim qml rss qtscript
 kde-base/kdelibs handbook udisks udisk2
+kde-base/kdm -consolekit
 
-dev-libs/e_dbus -hal udev
+x11-wm/enlightenment -udev -ukit
+dev-libs/e_dbus -hal -udev
 x11-libs/vte    python
-x11-themes/gtk-engines-qtcurve  firefox3
+# x11-themes/gtk-engines-qtcurve  firefox3
 net-proxy/tsocks tordns
 net-ftp/proftpd -clamav -kerberos
 net-p2p/amule daemon geoip remote stats
@@ -83,7 +111,7 @@ net-misc/curl -adns -ares -libssh2 openssl static-libs
 net-misc/rdesktop -ao
 dev-python/PyQt4  webkit
 x11-misc/google-gadgets gstreamer
-app-emulation/qemu kvm -kqemu vde
+app-emulation/qemu fdt kvm -kqemu vde
 app-admin/sudo -skey
 net-libs/xulrunner   -custom-optimization
 net-libs/gtk-vnc python
@@ -99,6 +127,7 @@ media-video/vlc mtp rtsp skins sqlite stream taglib twolame vaapi xosd
 media-libs/sdl-mixer mod 
 media-libs/mesa g3dvl gles1 gles2 
 media-libs/libquicktime -gtk
+media-gfx/exiv2 xmp 
 media-tv/gmlive extra sopcast
 media-video/totem python # for totem-pps
 media-video/transcode -xvid
@@ -108,18 +137,18 @@ media-libs/mlt melt
 media-libs/portaudio -oss
 media-libs/glu -multilib
 media-plugins/kipi-plugins -cdr
-media-tv/xbmc  -pulseaudio vaapi
+media-tv/xbmc  pulseaudio vaapi
 media-gfx/sane-backends -v4l
 # sys-apps/parted device-mapper
 sys-apps/man  -nls lzma
 sys-apps/man-pages -nls
 sys-devel/gcc  go graphite
-sys-devel/llvm  gold
+sys-devel/llvm  clang gold
 sys-devel/gcc lto
 sys-devel/gdb python
 # sys-devel/llvm llvm-gcc 
 dev-util/geany vte
-kde-base/kwin -gles
+kde-base/kwin gles
 kde-base/kdebase-kioslaves sftp
 kde-base/solid wicd
 kde-base/okular  -chm -djvu pdf 
@@ -130,23 +159,28 @@ sys-fs/udisks remote-access
 dev-libs/xmlrpc-c -tools
 dev-libs/libf2c static-libs
 app-arch/p7zip -kde
+sys-libs/talloc  python
+sys-libs/tdb python
 
 app-office/akonadi-server -mysql sqlite
 app-office/koffice-libs reports
 app-office/kchart reports
-net-misc/networkmanager -nss dhclient -dhcpcd resolvconf
+net-misc/networkmanager -consolekit -nss dhclient -dhcpcd -modemmanager resolvconf
 # move kde-misc/knetworkmanager kde-misc/networkmanagement
 kde-misc/networkmanagement  nm09 wicd 
 # kde-misc/knetworkmanager wicd
 net-p2p/ktorrent plasma
 net-libs/libsoup gnome
 
+kde-base/kdeplasma-addons attica fcitx json oauth qalculate
 kde-base/ksysguard -lm_sensors
 kde-base/krdc  rdp vnc
 dev-libs/soprano redland -java virtuoso
 # net-fs/samba-server -avahi
 # net-fs/samba-client -avahi
 net-fs/samba winbind smbsharemodes swat
+app-crypt/heimdal -ssl
+net-fs/cifs-utils ads upcall
 
 app-laptop/tp_smapi hdaps
 app-admin/conky thinkpad eve wifi math iostats 

@@ -1,7 +1,5 @@
 
 # ---
-# =sys-devel/gcc-4.5.1 **
-#=sys-devel/gcc-4.6.0 **
 #=sys-devel/binutils-2.21.51.0.9 **
 #=sys-devel/binutils-2.21.52.0.2 **
 #=sys-devel/binutils-2.21.53.0.2 **
@@ -12,9 +10,11 @@
 =dev-libs/boost-1.50.0-r2 **
 =dev-libs/boost-1.51.0 **
 =dev-libs/boost-1.52.0 **
+=dev-libs/boost-1.54.0 **
 =dev-util/boost-build-1.50.0-r3 **
 =dev-util/boost-build-1.51.0 **
 =dev-util/boost-build-1.52.0 **
+=dev-util/boost-build-1.54.0 **
 # ---
 
 
@@ -22,19 +22,18 @@
 # ---
 # BEGIN: sys-devel/gcc-4.6.0
 # ---
-=sys-devel/gcc-4.6.0::gentoo **
-=sys-devel/gcc-4.6.1-r1::gentoo **
-=sys-devel/gcc-4.6.2::gentoo **
-=sys-devel/gcc-4.6.3 **
 =sys-devel/gcc-4.7.0 **
 =sys-devel/gcc-4.7.1 **
 =sys-devel/gcc-4.7.2 **
+=sys-devel/gcc-4.8.0 **
+=sys-devel/gcc-4.8.1 **
 =sys-devel/gcc-config-1.5-r1::gentoo **
-=sys-libs/glibc-2.14 **
-=sys-libs/glibc-2.14.1 **
 =sys-libs/glibc-2.15 **
 =sys-libs/glibc-2.16.0 **
 =sys-libs/glibc-2.17 **
+=sys-libs/glibc-2.18 **
+
+=sys-libs/libcxxabi-9999 **
 
 # ---
 # END: sys-devel/gcc-4.6.0
