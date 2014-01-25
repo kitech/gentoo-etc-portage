@@ -1,5 +1,19 @@
-CC=gcc 
-CXX=g++ 
-CFLAGS="-O2 -pipe " 
+CC="${MCES_DISTCC} gcc "
+CXX="${MCES_DISTCC} g++ "
+CFLAGS="-O2 -pipe -DLDAP_DEPRECATED" 
 CXXFLAGS="${CFLAGS} "
+
+export CFLAGS="${CFLAGS}"
+export CXXFLAGS="${CXXFLAGS}"
+
+# multi compiler emerge system
+MCES_CC=gcc
+MCES_CXX=g++
+MCES_CC_FLAGS="${CFLAGS}"
+MCES_CXX_FLAGS="${CXXFLAGS}"
+
+export CMAKE_C_COMPILER=$CC
+export CMAKE_CXX_COMPILER=$CXX
+export QMAKE_CC=$CC
+export QMAKE_CXX=$CXX
 
