@@ -15,7 +15,7 @@ MCES_CC_FLAGS="${CFLAGS}"
 MCES_CXX_FLAGS="${CXXFLAGS}"
 
 
-export CMAKE_C_COMPILER=$CC
-export CMAKE_CXX_COMPILER=$CXX
-export QMAKE_CC=$CC
-export QMAKE_CXX=$CXX
+#export CMAKE_C_COMPILER="${CC}"
+#export CMAKE_CXX_COMPILER="${CXX}"
+export QMAKE_CC="${CC}"
+export QMAKE_CXX="${CXX}"

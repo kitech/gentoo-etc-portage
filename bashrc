@@ -1,5 +1,5 @@
-env | grep CC
-env | grep CXX
+#env | grep CC
+#env | grep CXX
 
 
 if [ "${EBUILD_PHASE}" == "postinst" ] || [ "${EBUILD_PHASE}" == "postrm" ] ; then
